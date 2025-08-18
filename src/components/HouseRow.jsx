@@ -1,3 +1,8 @@
+import React from "react";
+
+
+
+
 const HouseRow = ({house}) => {
   return (
     <tr>
@@ -8,4 +13,8 @@ const HouseRow = ({house}) => {
   );
 }
 
+const HouseRowMem = React.memo(HouseRow);
+
+
 export default HouseRow;
+export {HouseRowMem};
